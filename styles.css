@@ -442,7 +442,7 @@ nav {
 }
 
 .slider {
-    width: 100%;
+    width: 65vw;
     height: auto;
     margin: 60px auto;
     overflow: hidden;
