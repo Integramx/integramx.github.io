@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #00963f;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--white-color);
+    z-index: 10000;
+}
+
+.nav-logo {
+    width: 300px;
+    height: auto;
+    padding: 40px;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+#nav-active a {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    font-size: 2rem;
+    padding: 30px;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--black-color)
+}
+
+.nav-settings {
+    width: 300px;
+    font-size: 2.5rem;
+    display: flex;
+}
+
+.nav-settings .fa-globe {
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.nav-settings .fa-moon {
+    font-size: 2rem;
+}
+
+/* Mobile Nav */
+
+.mobile-nav-settings {
+    position: relative;
+    width: 300px;
+    height: auto;
+    display: none;
+}
+
+.mobile-nav-settings .fa-bars, .fa-caret-down {
+    color: black;
+    font-size: 2rem;
+}
+
+.saludo {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/backgrounds/2022-history.jpg');
+    background-size: cover;
+    background-position: center;
+}       
+
+.saludo h1 {
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    font-size: 10rem;
+}
+
+.saludo p {
+    padding: 0 20px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 30px;
+}
+
+.saludo-rrss {
+    color: white;
+    font-size: 2rem;
+}
+
+.saludo-rrss i {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.saludo-rrss a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MEDIOS DE CONTACTO */
+
+.contact {
+    position: relative;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.contact-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1050px;
+}
+
+.contact-cards {
+    padding: 0 20px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+.contact-div-vertical-line-one,
+.contact-div-vertical-line-two {
+    width: 2px;
+    height: 200px;
+    background-color: var(--main-color);
+}
+
+.contact-cards i {
+    padding: 10px;
+    background-color: var(--main-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-cards p {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-cards span {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.contact-location a {
+    text-decoration: none;
+}
+
+.contact-emails a {
+    color: black;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.contact-emails a:hover {
+    color: var(--main-color);
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.form-question {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.form-question h2 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.form-question p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.form-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-container-img {
+    width: 400px;
+    height: 450px;
+}
+
+.form-container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.form {
+    width: 500px;
+    height: auto;
+}
+
+.elem-group {
+    margin-bottom: 30px;
+}
+
+.elem-group input, textarea, select {
+    padding: 0 20px;
+}
+
+#department-selection {
+    border-radius: 30px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+#name, #email, #company {
+    border-radius: 30px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background-color: var(--white-color);
+    border: 1px solid var(--main-color);
+}
+
+#message {
+    border-radius: 30px;
+    outline: none;
+    width: 100%;
+    height: 80px;
+    background-color: var(--white-color);
+    border: 1px solid var(--main-color);
+    resize: none;
+}
+
+.form button {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    border: none;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+    background-color: #212121;
+    color:white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1500px;
+}
+
+/* Newsletter */
+
+.news-rrss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-logo img {
+    width: 250px;
+    opacity: 40%;
+}
+
+.newsletter label {
+    font-size: 1.5rem;
+}
+
+.newsletter .newsletter-email {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: start;
+    height: 30px;
+    outline: none;
+}
+
+.btn-newsletter {
+    background-color: #009640;
+    height: 30px;
+    border-radius: 20px;
+    width: 90px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Quick Links Footer */
+
+.footer-quick-links h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer-quick-links p {
+    font-size: 1.3rem;
+    line-height: 30px;
+    transition: .4s;
+}
+
+.footer-quick-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-quick-links p:hover {
+    color: #009640;
+}
+
+/* Location footer */
+
+.footer-location h4 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.footer-location p {
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+/* RRSS footer */
+
+.footer-rrss {
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    bottom: 40px;
+    font-size: 2rem;
+}
+
+.footer-rrss a {
+    color: white;
+    transition: .4s;
+}
+
+.footer-rrss a:hover {
+    color: var(--main-color);
+}
+
+.footer-rrss i {
+    margin-right: 20px;
+}
+
+/* Derechos footer */
+
+.footer-derechos {
+    background-color: #009640;
+    height: 50px;
+    width: 100%;
+}
+
+.footer-derechos h5 {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-top: 19px;
+}
+
+/* Media */
+
+@media (max-width: 919px) {
+    .form-container-img {
+        height: auto;
+    }
+    .form-container-img img {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 779px) {
+    .mobile-nav-settings {
+        display: contents;
+    }
+    .mobile-nav-settings .fa-bars {
+        position: absolute;
+        left: 40px;
+    }
+    .mobile-nav-settings .fa-caret-down {
+        position: absolute;
+        right: 40px;
+    }
+    .nav {
+        justify-content: center;
+    }
+    .nav ul {
+        display: none;
+    }
+    .nav-settings {
+        display: none;
+    }
+    .saludo h1 {
+        font-size: 5rem;
+    }
+    .saludo p {
+        font-size: 1.3rem;
+        line-height: 20px;
+    }
+    .footer-quick-links, .footer-location {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        width: auto;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container-img img {
+        display: none;
+    }
+}
