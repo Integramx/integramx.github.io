@@ -476,6 +476,9 @@ nav {
     .footer-quick-links, .footer-location {
         display: none;
     }
+    .slider .slide img {
+        width: 165px;
+    }
 }
 
 @media (max-width: 943px) {
@@ -524,9 +527,6 @@ nav {
     .saludo p {
         font-size: 1.3rem;
         line-height: 20px;
-    }
-    .slider .slide img {
-        width: 165px;
     }
 }
 
