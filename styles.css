@@ -442,7 +442,7 @@ nav {
 }
 
 .slider {
-    width: 65vw;
+    width: 88vw;
     height: auto;
     margin: 60px auto;
     overflow: hidden;
@@ -524,6 +524,9 @@ nav {
     .saludo p {
         font-size: 1.3rem;
         line-height: 20px;
+    }
+    .slider .slide img {
+        width: 165px;
     }
 }
 
