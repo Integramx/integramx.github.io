@@ -281,7 +281,7 @@ nav {
 }
 
 .clients-container {
-    width: 1400px;
+    width: auto;
 }
 
 .clients h2 {
@@ -453,7 +453,7 @@ nav {
     justify-content: space-between;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
-    width: calc(200px * 14);
+    width: calc(200px * 7);
 }
 
 .slider .slide img {
