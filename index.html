@@ -20,19 +20,49 @@
 </head>
 <body>
     <header class="header">
-      
-      <nav id="nav">
-        <img id="logo" src="./assets/subind_logos/Logo.png" alt="Logo de Subind">
-        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-          <span id="hamburger"></span>
-        </button>
-        <ul id="menu" role="menu">
-          <li id="nav-active"><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav class="nav">
+          <div class="mobile-nav-settings">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+            <div class="nav-logo">
+                <img src="./assets/subind_logos/Logo.png" alt="">
+            </div>
+            <div>
+            <ul>
+                <li id="nav-active"><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            </div>
+            <!-- <div class="nav-settings">
+              <i class="fa-solid fa-globe"></i>
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="mobile-nav-settings">
+              <i class="fa-solid fa-caret-down"></i>
+            </div> -->
+
+            <section class="menu-mobile inactive">
+              <div class="menu-mobile-container">
+                  <a href="index.html">
+                    <p>Inicio</p>
+                  </a>
+                  <hr>
+                  <a href="nosotros.html">
+                    <p>Nosotros</p>
+                  </a>
+                  <hr>
+                  <a href="productos.html">
+                    <p>Productos</p>
+                  </a>
+                  <hr>
+                  <a href="contacto.html">
+                    <p>Contacto</p>
+                  </a>
+              </div>
+          </section>
+        </nav>
 
 
         <div class="saludo">
